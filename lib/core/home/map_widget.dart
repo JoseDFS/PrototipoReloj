@@ -15,9 +15,12 @@ class MapWidget extends StatefulWidget {
 }
 
 class _MapWidgetState extends State<MapWidget> {
+
   final LatLng _currentLocation =
       LatLng(13.694712686271076, -89.24192016538022);
+
   final _polyline = <Polyline>[];
+  
   MapController? mapController;
 
   bool _isInside = false;
